@@ -24,7 +24,9 @@ navLinks.forEach((link) => {
   });
 });
 
-const sr = ScrollReveal({
+if (window.innerWidth >= 760) {
+
+  ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
@@ -32,17 +34,21 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(".home__data, .footer_data");
-sr.reveal(".home__img", { delay: 500, scale: 4 });
-sr.reveal(".why__data");
-sr.reveal(".why_left_data, .about_left_data", {
+ScrollReveal().reveal(".home__data, .footer_data");
+ScrollReveal().reveal(".home__img", { delay: 500, scale: 4 });
+ScrollReveal().reveal(".why__data");
+ScrollReveal().reveal(".why_left_data, .about_left_data", {
   origin: "left",
   distance: "400px",
 });
-sr.reveal(".why_right_data, .about_right_data", {
+ScrollReveal().reveal(".why_right_data, .about_right_data", {
   origin: "right",
   distance: "400px",
 });
 
-sr.reveal(" .footer",{origin: "bottom"});
+ScrollReveal().reveal(" .footer",{origin: "bottom"});
+
+
+  
+}
 
