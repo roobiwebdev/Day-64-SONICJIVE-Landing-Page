@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+* {
+  @apply p-0 m-0 box-border;
+}
+
+body {
+  @apply overflow-x-hidden select-none;
+}
+.nav-link:hover {
+  @apply text-[#FAFF00] scale-[1.1];
+}
+
+.white {
+  @apply text-white;
+}
+
+.btn {
+  @apply px-10 py-3 mt-5 font-medium rounded-md shadow-md bg-[#0E1828] text-white md:px-28 md:py-6 md:font-bold md:mt-8 lg:text-2xl;
+}
+
+.para {
+  @apply font-extralight text-[#5A5A5A] text-center md:text-start md:font-medium lg:font-semibold xl:font-bold md:tracking-wide md:my-5;
+}
+
+.img {
+  @apply transform scale-[1.4] md:transform md:scale-[2] md:mt-8;
+}
